@@ -1,0 +1,263 @@
+/* ---all common css start here--- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+/* ---all common css end here--- */
+/* ---nav css start here--- */
+#navbar{
+    padding: 40px 0;
+    /* background-color: ; */
+}
+.nav_wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_menu ul{
+    display: flex;
+    gap: 60px;
+}
+.nav_menu ul li a {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Manjari", sans-serif;
+    color: rgba(61, 57, 78, 0.796);
+    letter-spacing: 0.3%;
+    position: relative;
+    transition: all linear 0.3s;
+}
+.nav_menu ul li a:hover{
+    color: #FF9F56;
+}
+.circle{
+    position: absolute;
+    left: -20%;
+    bottom: -168%;
+    transform: translate(-5%,0%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+
+}
+.nav_menu ul li a:hover .circle{
+    opacity: 1;
+    visibility:visible;
+}
+.nav_user{
+    display: flex;
+    /* gap: 10px; */
+}
+.nav_user button{
+    padding: 15px 40px 10px 41px;
+    outline: none;
+    border: none; 
+    background: transparent;   
+    transition: all linear 0.3s;
+
+}
+.nav_user a{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Manjari", sans-serif;
+    color: #FF9F56;
+    
+    
+
+}
+.nav_user button:hover{
+    /* padding: 15px 40px 10px 41px; */
+    background-color: #FF9F56;
+    
+    border-radius: 10px;
+}
+.nav_user button:hover a{
+    color: #FFFFFF;
+}
+/* ---nav css end here--- */
+/* ---banner css start here--- */
+#banner{
+    padding: 40px 0px ;
+
+}
+.banner_wraper{
+    display: flex;
+    gap: 22px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.banner_left h1{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: 0.3%;
+    color: #27233A;
+    width: 584px;
+    margin-top: 127px;
+}
+.banner_left p{
+    font-family: "Manjari", sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    letter-spacing: 0.3%;
+    color: rgba(39, 35, 58, 0.904);
+    width: 509px;
+    margin-top: 36px;
+    margin-bottom: 52px;
+    position: relative;
+}
+.bannerbtn{
+    display: flex;
+    gap: 27px;
+}
+.bannerbtn button{
+    padding: 22px 40px;
+    background-color: transparent;
+    border: 1px solid #27233A;
+    border-radius: 50px;
+    
+
+
+}
+.bannerbtn button a{
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3%;
+    color:#27233A;
+    
+
+}
+.bannerbtn button:hover{
+    background: linear-gradient(90deg, #FF9A55 0%, #FFB555 100%);
+    
+    border: 1px solid #FF9A55;
+}
+.bannerbtn button:hover a{
+    color: #FFFFFF;
+}
+.banner_arrow{
+    position: absolute;
+    bottom: 20%;
+    left: 21%;
+}
+.banner_left h6{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: 0.3%;
+    color:#2A3382;
+    font-family: "Gaegu", sans-serif;
+    position: absolute;
+    bottom: 19%;
+    left: 29%;
+
+}
+.bookhere{
+    position: absolute;
+     bottom: 20%;
+    left: 39%;
+
+}
+/* ---banner css end here--- */
+/* ---what can we do css part start here--- */
+#service{
+    /* margin-top: 121px */
+    padding: 200px 90px;
+}
+.service_heading h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 7%;
+    color:#27233A;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Manjari", sans-serif;
+}
+.service_heading p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.3%;
+    color:#27233A;
+    margin-bottom: 64px;
+    font-family: "Manjari", sans-serif;
+    width: 615px;
+    text-align: center;
+    margin: 0 auto;
+}
+.service_card_wraper{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.secvice_card{
+    width: 293px;
+    background-color: #FFFFFF;
+    padding: 53px 36px 36px 36px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.secvice_card h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.3%;
+    color: #000000;
+    font-family: "Manjari", sans-serif;
+    margin-top: 24px;
+}
+.secvice_card p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.3%;
+    color:rgba(39, 35, 58, 0.9);
+    font-family: "Manjari", sans-serif;
+    width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.secvice_card:hover{
+    background: linear-gradient(90deg, #FF7F24 2%, #FF9145 38%, #FF9A55 55%, rgba(255, 154, 85, 0.4) 87%);
+
+}
+.secvice_card:hover h3 {
+    color: white;
+}
+.secvice_card:hover p{
+    color: white;
+
+}
+.secvice_card:hover .svg_ stop {
+    stop-color: #FFFFFF;
+    background: linear-gradient(90deg, #FFC9A4 0%, #FA8938 64%, #F46601 100%);
+}
+
+
+/* ---what can we do css part end here--- */
+

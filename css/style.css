@@ -219,6 +219,11 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all linear 0.3s;
+
+}
+.secvice_card:hover{
+    background: linear-gradient(90deg, #FF7F24 2%, #FF9145 38%, #FF9A55 55%, rgba(255, 154, 85, 0.4) 87%);
 
 }
 .secvice_card h3{
@@ -242,10 +247,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     margin-top: 30px;
 }
-.secvice_card:hover{
-    background: linear-gradient(90deg, #FF7F24 2%, #FF9145 38%, #FF9A55 55%, rgba(255, 154, 85, 0.4) 87%);
 
-}
 .secvice_card:hover h3 {
     color: white;
 }
@@ -261,3 +263,270 @@ h1,h2,h3,h4,h5,h6{
 
 /* ---what can we do css part end here--- */
 
+/* -----pakager css start here--- */
+
+#package_part {
+    padding: 80px 0;
+    background: #FFFAF6;
+}
+
+/* Package Heading */
+.package_heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.package_heading h2 {
+    color: #27233A;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: 7%;
+    font-family: "Manjari", sans-serif;
+
+    margin-bottom: 50px;
+}
+
+.package_heading p {
+    color: rgba(39, 35, 58, 0.904);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.3%;
+    font-family: "Manjari", sans-serif;
+
+}
+
+/* Package Card */
+.pakage_wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.package_card {
+    width: 310px;
+    padding: 30px 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.package_card h3 {
+
+    color: #343044;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1%;
+    font-family: "Manjari", sans-serif;
+
+    margin-bottom: 15px;
+}
+
+/* Price */
+.package_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 15px;
+}
+
+.package_price span i {
+    color: #FF914D;
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+}
+
+.package_price h2 {
+    color: #FF914D;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 1%;
+    font-family: "Manjari", sans-serif;
+
+
+
+}
+
+.package_price small {
+    color: rgba(153, 153, 153, 0.748)94E;
+    font-family: "Manjari", sans-serif;
+   
+    margin-top: 15px;
+     font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1%;
+}
+
+/* Services */
+.package_card ul {
+    margin-bottom: 20px;
+}
+
+.package_card ul li {
+    color: rgba(61, 57, 78, 0.746);
+    font-family: "Manjari", sans-serif;
+   
+    margin-top: 15px;
+     font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1%;
+
+}
+
+.package_card button{
+    margin: 0 auto;
+    width: 229px;
+    padding: 26px 67px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: linear-gradient(
+    90deg,
+    rgba(255, 127, 36, 1) 2%,
+    rgba(255, 154, 85, 0.8) 53%,
+    rgba(255, 154, 85, 0.4) 87%
+);
+}
+.package_card button a{
+    color: #FFFFFF;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1%;
+    font-family: "Manjari", sans-serif;
+
+}
+/* .package_card:hover{
+    background: linear-gradient(
+    90deg,
+    rgba(255, 127, 36, 1) 2%,
+    rgba(255, 154, 85, 0.8) 53%,
+    rgba(255, 154, 85, 0.4) 87%
+);
+    color: #FFFFFF;
+} */
+
+.package_card {
+    transition: all 0.4s ease;
+    z-index: 50;
+}
+
+.package_card:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 127, 36, 1) 2%,
+        rgba(255, 154, 85, 0.8) 53%,
+        rgba(255, 154, 85, 0.4) 87%
+    );
+    scale: 1.2;
+    z-index: 30;
+}
+
+/* Hover Text Color */
+.package_card:hover h3,
+.package_card:hover .package_price span i,
+.package_card:hover .package_price h2,
+.package_card:hover .package_price small,
+.package_card:hover ul li {
+    color: #FFFFFF;
+}
+
+/* Hover Button */
+.package_card:hover button {
+    background: #FFFFFF;
+}
+
+.package_card:hover button a {
+    color: #FF7F24;
+}
+
+/* -----pakager css end here--- */
+
+
+/* testimonial css part start here */
+#testimonial{
+    padding: 100px 0;
+
+}
+.testimonial_heading h2{
+    font-family: "Manjari", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 7%;
+    text-align: center;
+    color: #27233A;
+}
+.testimonial_heading p{
+    font-family: "Manjari", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
+    color: rgba(39, 35, 58, 0.827);
+    margin-top: 30px;
+}
+.testimonial_content_wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.testimonial_left img{
+    width: 550px;
+}
+
+
+
+
+
+.testimonial_right h3{
+    font-family: "Manjari", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #27233A;
+}
+.testimonial_right p{
+    font-family: "Manjari", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(39, 35, 58, 0.9);
+}
+.testimonial_right h5{
+    font-family: "Manjari", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.3%;
+    color: #27233A;
+    margin-top: 32px;
+    width: 538px;
+}
+.testimonial_icon{
+    display: flex;
+    gap: 58px;
+    
+
+}
+.testimonial_icon i{
+    color: #F46601;
+    background-color: white;
+    /* width: 70px;
+    height: 70px; */
+    font-size: 70px;
+    margin-top: 40px;
+}
+/* testimonial css part end here */
